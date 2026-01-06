@@ -15,3 +15,4 @@ set(INC_IRS
 # add third party libraries
 add_subdirectory(sphy-2d)
 add_subdirectory(src/client)
+add_subdirectory(src/server)

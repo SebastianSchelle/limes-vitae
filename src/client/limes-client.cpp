@@ -1,7 +1,7 @@
 #include <limes-client.hpp>
 
-LimesClient::LimesClient() {
-    init();
+LimesClient::LimesClient(def::CmdLinOptionsClient& options) : MainWindow(options) {
+    initPre();
     winLoop();
 }
 LimesClient::~LimesClient() {}

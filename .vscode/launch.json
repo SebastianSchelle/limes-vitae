@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Client",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/deploy/limes-client",
+            "args": [],
+            "cwd": "${workspaceFolder}/deploy",
+            "stopOnEntry": false
+        },
+        {
+            "name": "Debug Server",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/deploy/limes-server",
+            "args": [],
+            "cwd": "${workspaceFolder}/deploy",
+            "stopOnEntry": false
+        },
+        {
+            "name": "Debug Storage Allocator",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/sphy-2d/build/test-shelf-allocator",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false
+        }
+    ]
+}
