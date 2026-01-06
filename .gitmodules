@@ -1,0 +1,3 @@
+[submodule "sphy-2d"]
+	path = sphy-2d
+	url = git@github.com:SebastianSchelle/sphy-2d.git
