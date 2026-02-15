@@ -1,0 +1,26 @@
+name: Core
+desc: Core module
+
+deps:
+    - engine
+
+fonts:
+    - "Plain Germanica.ttf"
+
+ui-docs:
+  menu:
+    path: menu.rml
+  load-game:
+    path: load-game.rml
+  options:
+    path: options.rml
+  mod-options:
+    path: mod-option-list.rml
+  display:
+    path: display.rml
+  graphics:
+    path: graphics.rml
+  audio:
+    path: audio.rml
+  tests:
+    path: tests.rml

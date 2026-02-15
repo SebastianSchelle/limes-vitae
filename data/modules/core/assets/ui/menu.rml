@@ -1,0 +1,16 @@
+<rml>
+
+    <head>
+        <link type="text/template" href="../../../core/assets/ui/tmp-menu-page.rml" />
+        <title>Menu</title>
+    </head>
+
+    <body template="tmp-menu-page">
+        <button data-event-click="">Continue</button>
+        <button data-event-click="onNavigate('load-game')">Load Game</button>
+        <button data-event-click="onNavigate('options')">Options</button>
+        <button data-event-click="onNavigate('mod-options')">Mod Options</button>
+        <button data-event-click="onQuit()">Quit</button>
+        <button data-event-click="onNavigate('tests')">UI Test</button>
+    </body>
+</rml>
