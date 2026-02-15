@@ -21,7 +21,3 @@ add_executable(${EXEC_NAME} ${SRC_LIMS})
 target_include_directories(${EXEC_NAME} PUBLIC ${INC_LIMS})
 target_link_libraries(${EXEC_NAME} PUBLIC ${LIBS_LIMS})
 
-add_custom_command(TARGET ${EXEC_NAME} POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:${EXEC_NAME}> ${DEPLOY_DIR_LIMS}/${EXEC_NAME}
-)
-
