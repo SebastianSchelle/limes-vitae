@@ -1,5 +1,6 @@
 name: Core
 desc: Core module
+version: 1.0.0
 
 deps:
     - engine

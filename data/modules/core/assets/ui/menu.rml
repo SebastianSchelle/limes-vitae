@@ -7,7 +7,9 @@
 
     <body template="tmp-menu-page">
         <button data-event-click="">Continue</button>
+        <button data-event-click="onNewGame()">New Game</button>
         <button data-event-click="onNavigate('load-game')">Load Game</button>
+        <button data-event-click="onNavigate('connect-to-host')">Connect to Host</button>
         <button data-event-click="onNavigate('options')">Options</button>
         <button data-event-click="onNavigate('mod-options')">Mod Options</button>
         <button data-event-click="onQuit()">Quit</button>
