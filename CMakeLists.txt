@@ -8,6 +8,8 @@ project(
     VERSION 1.0
     LANGUAGES CXX)
 
+set(GAME_NAME "limes" CACHE STRING "Game name used for save files and binaries")
+
 set(INC_IRS 
     ${CMAKE_SOURCE_DIR}/src/client
 )

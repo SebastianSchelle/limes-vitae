@@ -1,4 +1,5 @@
-set(EXEC_NAME limes-server)
+set(GAME_NAME "limes")
+set(EXEC_NAME ${GAME_NAME}-server)
 
 set(SPHY_2D_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../sphy-2d)
 set(SPHY_2D_DATA ${SPHY_2D_DIR}/data)
@@ -18,7 +19,7 @@ set(LIBS_LIMS
 )
 
 add_executable(${EXEC_NAME} ${SRC_LIMS})
-target_compile_definitions(${EXEC_NAME} PRIVATE SERVER)
+target_compile_definitions(${EXEC_NAME} PRIVATE SERVER GAME_NAME="${GAME_NAME}")
 target_include_directories(${EXEC_NAME} PUBLIC ${INC_LIMS})
 target_link_libraries(${EXEC_NAME} PUBLIC ${LIBS_LIMS})
 

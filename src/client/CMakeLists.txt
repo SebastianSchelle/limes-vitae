@@ -1,4 +1,5 @@
-set(EXEC_NAME limes-client)
+set(GAME_NAME "limes")
+set(EXEC_NAME ${GAME_NAME}-client)
 
 set(SPHY_2D_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../sphy-2d)
 set(SPHY_2D_DATA ${SPHY_2D_DIR}/data)
@@ -19,7 +20,7 @@ set(LIBS_LIMC
 )
 
 add_executable(${EXEC_NAME} ${SRC_LIMC})
-target_compile_definitions(${EXEC_NAME} PRIVATE BX_CONFIG_DEBUG=1 CLIENT)
+target_compile_definitions(${EXEC_NAME} PRIVATE BX_CONFIG_DEBUG=1 CLIENT GAME_NAME="${GAME_NAME}")
 target_include_directories(${EXEC_NAME} PUBLIC ${INC_LIMC})
 target_link_libraries(${EXEC_NAME} PUBLIC ${LIBS_LIMC})
 
