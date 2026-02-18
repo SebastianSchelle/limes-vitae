@@ -8,9 +8,9 @@ int main(int argc, char* argv[])
 {
     po::variables_map vm;
     po::options_description desc("Allowed options");
-    def::CmdLinOptionsServer options;
-    def::CmdLinOptionsServer::createCmdLineOptions(desc);
-    if (def::CmdLinOptionsServer::handleDefaultCmdLineOptions(argc, argv, desc, vm, options)) {
+    sphy::CmdLinOptionsServer options;
+    sphy::CmdLinOptionsServer::createCmdLineOptions(desc);
+    if (sphy::CmdLinOptionsServer::handleDefaultCmdLineOptions(argc, argv, desc, vm, options)) {
         return 0;
     }
     LimesServer limesServer(options);

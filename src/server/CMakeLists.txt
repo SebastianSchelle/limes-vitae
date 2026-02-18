@@ -18,6 +18,7 @@ set(LIBS_LIMS
 )
 
 add_executable(${EXEC_NAME} ${SRC_LIMS})
+target_compile_definitions(${EXEC_NAME} PRIVATE SERVER)
 target_include_directories(${EXEC_NAME} PUBLIC ${INC_LIMS})
 target_link_libraries(${EXEC_NAME} PUBLIC ${LIBS_LIMS})
 

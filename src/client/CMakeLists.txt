@@ -19,7 +19,7 @@ set(LIBS_LIMC
 )
 
 add_executable(${EXEC_NAME} ${SRC_LIMC})
-target_compile_definitions(${EXEC_NAME} PRIVATE BX_CONFIG_DEBUG=1)
+target_compile_definitions(${EXEC_NAME} PRIVATE BX_CONFIG_DEBUG=1 CLIENT)
 target_include_directories(${EXEC_NAME} PUBLIC ${INC_LIMC})
 target_link_libraries(${EXEC_NAME} PUBLIC ${LIBS_LIMC})
 

@@ -5,7 +5,7 @@
 
 class LimesServer : public sphys::Server {
   public:
-    LimesServer(def::CmdLinOptionsServer& options);
+    LimesServer(sphy::CmdLinOptionsServer& options);
     ~LimesServer();
 };
 

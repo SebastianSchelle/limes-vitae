@@ -5,7 +5,7 @@
 
 class LimesClient : public ui::MainWindow {
   public:
-    LimesClient(def::CmdLinOptionsClient& options);
+    LimesClient(sphy::CmdLinOptionsClient& options);
     ~LimesClient();
 };
 
