@@ -1,0 +1,9 @@
+
+- type: asset-id
+  name: test
+- type: phy
+  mass: 100.0
+  inertia: 10.0
+- type: trans
+  pos: [0.0, 0.0]
+  rot: 0.0
