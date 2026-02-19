@@ -1,0 +1,9 @@
+
+- type: asset-id
+  name: lolol
+- type: phy
+  mass: 1000.0
+  inertia: 1.0
+- type: trans
+  pos: [34.0, 12.0]
+  rot: 1.0
