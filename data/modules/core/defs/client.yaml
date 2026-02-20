@@ -10,3 +10,13 @@ gfx:
   tex-layer-cnt: 16
   tex-bucket-size: 1000
   tex-excess-height-threshold: 0.8
+  max-zoom:
+    world: 10.0
+    map: 10.0
+  min-zoom:
+    world: 0.1
+    map: 0.1
+  zoom-step:
+    world: 0.1
+    map: 0.1
+    
