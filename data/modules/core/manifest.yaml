@@ -25,3 +25,5 @@ ui-docs:
     path: audio.rml
   tests:
     path: tests.rml
+  connect-to-host:
+    path: connect-to-host.rml
