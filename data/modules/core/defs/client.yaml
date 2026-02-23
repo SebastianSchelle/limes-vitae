@@ -9,8 +9,8 @@ gfx:
     world: 10.0
     map: 10.0
   min-zoom:
-    world: 0.1
-    map: 0.1
+    world: 0.01
+    map: 0.01
   zoom-step:
     world: 0.1
     map: 0.1

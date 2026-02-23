@@ -15,7 +15,12 @@
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/deploy/limes-server",
-            "args": [],
+            "args": [
+                "-w",
+                "${workspaceFolder}/deploy",
+                "-s",
+                "${env:HOME}/Documents/galaxies/test-game-2"
+            ],
             "cwd": "${workspaceFolder}/deploy",
             "stopOnEntry": false
         },
