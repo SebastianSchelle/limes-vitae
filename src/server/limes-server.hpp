@@ -7,6 +7,8 @@ class LimesServer : public sphys::Server {
   public:
     LimesServer(sphy::CmdLinOptionsServer& options);
     ~LimesServer();
+
+    void registerSystems(ecs::Ecs& ecs) override;
 };
 
 #endif

@@ -1,0 +1,22 @@
+{
+  "files.exclude": {
+    "**/thirdparty/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true
+  },
+  "files.watcherExclude": {
+    "**/thirdparty/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true
+  },
+  "search.exclude": {
+    "**/thirdparty/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true
+  },
+  "C_Cpp.files.exclude": {
+    "**/thirdparty/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true
+  }
+}

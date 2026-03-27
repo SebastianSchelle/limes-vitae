@@ -14,5 +14,6 @@ int main(int argc, char* argv[])
         return 0;
     }
     LimesServer limesServer(options);
+    limesServer.startServer();
     return 0;
 }

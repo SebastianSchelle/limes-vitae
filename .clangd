@@ -1,0 +1,17 @@
+---
+If:
+  # Skip indexing of third-party code (bgfx, etc.) to keep clangd fast.
+  PathMatch: '.*thirdparty/.*'
+Index:
+  Background: Skip
+---
+If:
+  # Skip indexing of generated/build artifacts.
+  PathMatch: '.*build/.*'
+Index:
+  Background: Skip
+---
+If:
+  PathMatch: '.*\\.vscode/.*'
+Index:
+  Background: Skip
