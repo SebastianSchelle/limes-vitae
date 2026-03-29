@@ -4,8 +4,5 @@
 - type: phy
   mass: 100.0
   inertia: 10.0
-  vel: [0.0, 0.0]
+  vel: [1.0, -1.0]
   rotVel: 0.5
-- type: trans
-  pos: [0.0, 0.0]
-  rot: 0.0
