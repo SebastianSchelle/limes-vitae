@@ -27,3 +27,5 @@ ui-docs:
     path: tests.rml
   connect-to-host:
     path: connect-to-host.rml
+  chat:
+    path: chat.rml
