@@ -5,9 +5,6 @@ version: 1.0.0
 deps:
     - engine
 
-fonts:
-    - "Plain Germanica.ttf"
-
 ui-docs:
   menu:
     path: menu.rml
@@ -29,3 +26,5 @@ ui-docs:
     path: connect-to-host.rml
   chat:
     path: chat.rml
+  debug:
+    path: debug.rml

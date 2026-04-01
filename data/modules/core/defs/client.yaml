@@ -1,4 +1,7 @@
 loglevel: 1
+win:
+  width: 1200
+  height: 800
 gfx:
   tex-width: 2000
   tex-height: 2000

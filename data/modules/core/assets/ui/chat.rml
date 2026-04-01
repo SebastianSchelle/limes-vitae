@@ -5,8 +5,11 @@
 		<title>Chat</title>
 		<style>
 			body.chat-window {
-				width: 420dp;
-				height: 320dp;
+				font-family: Roboto;
+				font-weight: normal;
+				font-style: normal;
+				width: 420px;
+				height: 320px;
 				margin: auto auto 0px 0px;
 				display: flex;
 				flex-direction: column;
@@ -22,13 +25,12 @@
 				color: #b8c4ff;
 				text-transform: uppercase;
 				padding: 2px 4px 6px 4px;
-				border-bottom: 1px #7784ff50;
 				flex: none;
 			}
 
 			.chat-transcript {
 				flex: 1 1 auto;
-				min-height: 120dp;
+				min-height: 120px;
 				border: 1px #7784ff40;
 				border-radius: 4px;
 				background: #04001885;
@@ -78,7 +80,7 @@
 
 			.chat-sender {
 				flex: none;
-				max-width: 210dp;
+				max-width: 210px;
 				font-size: 11px;
 				font-weight: bold;
 				color: #a8b8ff;
@@ -91,7 +93,6 @@
 
 			.chat-sender-click {
 				cursor: pointer;
-				text-decoration: underline #a8b8ff60;
 			}
 
 			.chat-sender-click:hover {
@@ -100,7 +101,7 @@
 
 			.chat-target {
 				flex: none;
-				max-width: 210dp;
+				max-width: 210px;
 				font-size: 11px;
 				font-weight: bold;
 				color: #8399fa;
@@ -154,10 +155,9 @@
 
 			.form_row .button {
 				flex: none;
-				min-width: 32dp;
+				min-width: 32px;
 				margin: 0px;
 			}
-
 		</style>
 	</head>
 
@@ -168,7 +168,8 @@
 				<div class="chat-message-box">
 					<div class="chat-message-row">
 						<div class="chat-timestamp">{{message.timestampText}}</div>
-						<div class="chat-sender chat-sender-click" data-event-click="chat_sender_click(message.sender)">{{message.sender}}</div>
+						<div class="chat-sender chat-sender-click" data-event-click="chat_sender_click(message.sender)">
+							{{message.sender}}</div>
 						<div class="chat-target">{{message.target}}</div>
 					</div>
 					<div class="chat-message-text-wrap">
