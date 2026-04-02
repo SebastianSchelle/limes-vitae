@@ -104,6 +104,12 @@
 						class="dbg-v">{{gameData.gameState}}</span></div>
 				<div class="dbg-note">State advances in model.modelLoop; see ClientGameState in std-inc.hpp.</div>
 			</panel>
+			<tab>Connection</tab>
+			<panel>
+				<div class="dbg-section">Timing</div>
+				<div class="dbg-row"><span class="dbg-k">Latency</span><span class="dbg-v">{{connectionData.serverLatency}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Time offset</span><span class="dbg-v">{{connectionData.serverTimeOffset}}</span></div>
+			</panel>
 		</tabset>
 	</body>
 </rml>
