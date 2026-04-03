@@ -1,7 +1,7 @@
 
 - type: asset-id
   name: test
-- type: phy
+- type: physics-body
   mass: 100.0
   inertia: 10.0
   vel: [1.0, -1.0]
