@@ -17,4 +17,6 @@ gfx:
   zoom-step:
     world: 0.1
     map: 0.1
-    
+  pan-speed:
+    world: 10.0
+    map: 10.0

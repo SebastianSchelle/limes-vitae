@@ -1,4 +1,5 @@
 <rml>
+
 	<head>
 		<link type="text/css" href="../../../core/assets/ui/style.rcss" />
 		<title>Debug</title>
@@ -74,11 +75,14 @@
 						class="dbg-v">{{inputData.ptrScreenY}}</span></div>
 				<div class="dbg-row"><span class="dbg-k">Over UI</span><span
 						class="dbg-v">{{inputData.ptrOverUi}}</span></div>
-				<div class="dbg-row"><span class="dbg-k">World X</span><span
-						class="dbg-v">{{inputData.ptrWorldX}}</span></div>
-				<div class="dbg-row"><span class="dbg-k">World Y</span><span
-						class="dbg-v">{{inputData.ptrWorldY}}</span></div>
-				<div class="dbg-note">Test note.</div>
+				<div class="dbg-row"><span class="dbg-k">Sector X</span><span
+						class="dbg-v">{{inputData.ptrSectorX}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Sector Y</span><span
+						class="dbg-v">{{inputData.ptrSectorY}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Sector Pos X</span><span
+						class="dbg-v">{{inputData.ptrSectorPosX}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Sector Pos Y</span><span
+						class="dbg-v">{{inputData.ptrSectorPosY}}</span></div>
 			</panel>
 
 			<tab>View</tab>
@@ -95,6 +99,10 @@
 				<div class="dbg-row"><span class="dbg-k">Zoom</span><span class="dbg-v">{{viewData.zoom}}</span></div>
 				<div class="dbg-row"><span class="dbg-k">Cam X</span><span class="dbg-v">{{viewData.camX}}</span></div>
 				<div class="dbg-row"><span class="dbg-k">Cam Y</span><span class="dbg-v">{{viewData.camY}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Sector offset X</span><span
+						class="dbg-v">{{viewData.sectorOffsetX}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Sector offset Y</span><span
+						class="dbg-v">{{viewData.sectorOffsetY}}</span></div>
 			</panel>
 
 			<tab>Game</tab>
@@ -107,8 +115,10 @@
 			<tab>Connection</tab>
 			<panel>
 				<div class="dbg-section">Timing</div>
-				<div class="dbg-row"><span class="dbg-k">Latency</span><span class="dbg-v">{{connectionData.serverLatency}}</span></div>
-				<div class="dbg-row"><span class="dbg-k">Time offset</span><span class="dbg-v">{{connectionData.serverTimeOffset}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Latency</span><span
+						class="dbg-v">{{connectionData.serverLatency}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Time offset</span><span
+						class="dbg-v">{{connectionData.serverTimeOffset}}</span></div>
 			</panel>
 		</tabset>
 	</body>
