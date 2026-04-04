@@ -4,5 +4,14 @@
 - type: physics-body
   mass: 100.0
   inertia: 10.0
-  vel: [1.0, -1.0]
+  vel: [0.0, 0.0]
   rotVel: 0.5
+- type: phy-thrust
+  thrustGlobal: [100.0, 1000.0]
+  thrustLocal: [0.0, 0.0]
+  torque: 10.0
+  maxTorque: 100.0
+  maxRotVel: 0.0
+  thrustMainMax: 100.0
+  thrustManeuverMax: 100.0
+  maxSpd: 100.0

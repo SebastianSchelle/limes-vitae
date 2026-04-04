@@ -66,6 +66,74 @@
 
 	<body class="debug-window" data-model="debug">
 		<tabset id="dbg-tabs">
+			<tab>Game object</tab>
+			<panel>
+				<div class="dbg-section">Selection</div>
+				<div class="dbg-row"><span class="dbg-k">Entity index</span><span
+						class="dbg-v">{{selGameObject.entityId}}</span></div>
+				<div class="dbg-row"><span class="dbg-k">Generation</span><span
+						class="dbg-v">{{selGameObject.generation}}</span></div>
+
+				<div data-if="selGameObject.hasSectorId">
+					<div class="dbg-section">Sector id</div>
+					<div class="dbg-row"><span class="dbg-k">Id</span><span
+							class="dbg-v">{{selGameObject.sectorId}}</span></div>
+				</div>
+
+				<div data-if="selGameObject.hasTransform">
+					<div class="dbg-section">Transform</div>
+					<div class="dbg-row"><span class="dbg-k">Pos X</span><span
+							class="dbg-v">{{selGameObject.posX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Pos Y</span><span
+							class="dbg-v">{{selGameObject.posY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Rot</span><span
+							class="dbg-v">{{selGameObject.rot}}</span></div>
+				</div>
+
+				<div data-if="selGameObject.hasPhysicsBody">
+					<div class="dbg-section">Physics body</div>
+					<div class="dbg-row"><span class="dbg-k">Mass</span><span
+							class="dbg-v">{{selGameObject.mass}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Inertia</span><span
+							class="dbg-v">{{selGameObject.inertia}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Vel X</span><span
+							class="dbg-v">{{selGameObject.velX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Vel Y</span><span
+							class="dbg-v">{{selGameObject.velY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Rot vel</span><span
+							class="dbg-v">{{selGameObject.rotVel}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Rot acc</span><span
+							class="dbg-v">{{selGameObject.rotAcc}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Acc X</span><span
+							class="dbg-v">{{selGameObject.accX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Acc Y</span><span
+							class="dbg-v">{{selGameObject.accY}}</span></div>
+				</div>
+
+				<div data-if="selGameObject.hasPhyThrust">
+					<div class="dbg-section">Phy thrust</div>
+					<div class="dbg-row"><span class="dbg-k">Thrust global X</span><span
+							class="dbg-v">{{selGameObject.thrustGlobalX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Thrust global Y</span><span
+							class="dbg-v">{{selGameObject.thrustGlobalY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Thrust local X</span><span
+							class="dbg-v">{{selGameObject.thrustLocalX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Thrust local Y</span><span
+							class="dbg-v">{{selGameObject.thrustLocalY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Torque</span><span
+							class="dbg-v">{{selGameObject.torque}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Max torque</span><span
+							class="dbg-v">{{selGameObject.maxTorque}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Max rot vel</span><span
+							class="dbg-v">{{selGameObject.maxRotVel}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Thrust main max</span><span
+							class="dbg-v">{{selGameObject.thrustMainMax}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Thrust maneuver max</span><span
+							class="dbg-v">{{selGameObject.thrustManeuverMax}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Max speed</span><span
+							class="dbg-v">{{selGameObject.maxSpd}}</span></div>
+				</div>
+			</panel>
 			<tab>Input</tab>
 			<panel>
 				<div class="dbg-section">Pointer</div>

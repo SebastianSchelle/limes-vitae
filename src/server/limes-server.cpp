@@ -7,5 +7,6 @@ LimesServer::LimesServer(sphy::CmdLinOptionsServer &options)
 LimesServer::~LimesServer() {}
 
 void LimesServer::registerSystems(ecs::Ecs& ecs) {
+  ecs.registerSystem(ecs::sysPhyThrust);
   ecs.registerSystem(ecs::sysPhysics);
 }
