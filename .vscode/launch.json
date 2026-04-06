@@ -6,7 +6,10 @@
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/deploy/limes-client",
-            "args": [],
+            "args": [
+                "-w",
+                "${workspaceFolder}/deploy",
+            ],
             "cwd": "${workspaceFolder}/deploy",
             "stopOnEntry": false
         },

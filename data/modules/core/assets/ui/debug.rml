@@ -133,6 +133,23 @@
 					<div class="dbg-row"><span class="dbg-k">Max speed</span><span
 							class="dbg-v">{{selGameObject.maxSpd}}</span></div>
 				</div>
+				<div data-if="selGameObject.hasPhyPid">
+					<div class="dbg-section">Phy PID</div>
+					<div class="dbg-row"><span class="dbg-k">Active</span><span
+							class="dbg-v">{{selGameObject.phyPidActive}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint X</span><span
+							class="dbg-v">{{selGameObject.spPosX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint Y</span><span
+							class="dbg-v">{{selGameObject.spPosY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint rot</span><span
+							class="dbg-v">{{selGameObject.spRot}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Error X</span><span
+							class="dbg-v">{{selGameObject.errorX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Error Y</span><span
+							class="dbg-v">{{selGameObject.errorY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Error rot</span><span
+							class="dbg-v">{{selGameObject.errorRot}}</span></div>
+				</div>
 			</panel>
 			<tab>Input</tab>
 			<panel>

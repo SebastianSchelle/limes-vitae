@@ -1,4 +1,6 @@
 loglevel: 1
+chat:
+  cmd-history-entries: 50
 win:
   width: 1200
   height: 800
@@ -9,8 +11,8 @@ gfx:
   tex-bucket-size: 1000
   tex-excess-height-threshold: 0.8
   max-zoom:
-    world: 10.0
-    map: 10.0
+    world: 10
+    map: 10
   min-zoom:
     world: 0.01
     map: 0.01
@@ -18,5 +20,13 @@ gfx:
     world: 0.1
     map: 0.1
   pan-speed:
-    world: 10.0
-    map: 10.0
+    world: 10
+    map: 10
+input:
+  drag-threshold:
+    world: 300
+theme:
+  input:
+    drag-box:
+      color: 0x2085e085
+      thickness: 1
