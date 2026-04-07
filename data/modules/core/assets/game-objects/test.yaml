@@ -2,7 +2,7 @@
 - type: asset-id
   name: test
 - type: physics-body
-  mass: 100.0
+  mass: 10.0
   inertia: 10.0
   vel: [0.0, 0.0]
   rotVel: 0.0
@@ -15,12 +15,7 @@
   thrustMainMax: 10000.0
   thrustManeuverMax: 1000.0
   maxSpd: 100.0
-- type: phy-pid
+- type: move-ctrl
   active: true
-  spPos: [100.0, 200.0]
+  spPos: [100.0, 0.0]
   spRot: 0.5
-
-  kpFwd: 0.5
-  kdFwd: 0.0
-  kpSide: 0.5
-  kdSide: 0.00

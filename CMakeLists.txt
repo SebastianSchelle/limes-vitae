@@ -8,6 +8,9 @@ project(
     VERSION 1.0
     LANGUAGES CXX)
 
+# Define DEBUG only for Debug configuration.
+add_compile_definitions($<$<CONFIG:Debug>:DEBUG>)
+
 set(GAME_NAME "limes" CACHE STRING "Game name used for save files and binaries")
 
 set(INC_IRS 
