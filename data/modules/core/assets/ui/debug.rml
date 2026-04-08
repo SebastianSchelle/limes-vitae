@@ -141,8 +141,18 @@
 							class="dbg-v">{{selGameObject.spPosX}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Setpoint Y</span><span
 							class="dbg-v">{{selGameObject.spPosY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint sector X</span><span
+							class="dbg-v">{{selGameObject.spPosSecX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint sector Y</span><span
+							class="dbg-v">{{selGameObject.spPosSecY}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Setpoint rot</span><span
 							class="dbg-v">{{selGameObject.spRot}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Face mode</span><span
+							class="dbg-v">{{selGameObject.moveCtrlFaceDirMode}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Look at X</span><span
+							class="dbg-v">{{selGameObject.lookAtX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Look at Y</span><span
+							class="dbg-v">{{selGameObject.lookAtY}}</span></div>
 				</div>
 			</panel>
 			<tab>Input</tab>

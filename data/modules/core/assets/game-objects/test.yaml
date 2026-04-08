@@ -17,5 +17,8 @@
   maxSpd: 100.0
 - type: move-ctrl
   active: true
+  spPosSec: [0, 0]
   spPos: [100.0, 0.0]
   spRot: 0.5
+  lookAt: [0.0, 0.0]
+  faceDirMode: Forward
