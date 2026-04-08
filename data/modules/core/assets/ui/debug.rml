@@ -102,12 +102,6 @@
 							class="dbg-v">{{selGameObject.velY}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Rot vel</span><span
 							class="dbg-v">{{selGameObject.rotVel}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Rot acc</span><span
-							class="dbg-v">{{selGameObject.rotAcc}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Acc X</span><span
-							class="dbg-v">{{selGameObject.accX}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Acc Y</span><span
-							class="dbg-v">{{selGameObject.accY}}</span></div>
 				</div>
 
 				<div data-if="selGameObject.hasPhyThrust">
