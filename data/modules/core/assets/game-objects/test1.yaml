@@ -1,0 +1,19 @@
+
+- type: asset-id
+  name: test1
+- type: physics-body
+  mass: 10.0
+  inertia: 10.0
+  vel: [0.0, 0.0]
+  rotVel: 0.0
+- type: phy-thrust
+  thrustGlobal: [0.0, 0.0]
+  thrustLocal: [0.0, 0.0]
+  torque: 0.0
+  maxTorque: 1000.0
+  maxRotVel: 10.0
+  thrustMainMax: 10000.0
+  thrustManeuverMax: 1000.0
+  maxSpd: 100.0
+- type: move-ctrl
+  active: false

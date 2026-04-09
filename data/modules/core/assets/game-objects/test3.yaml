@@ -1,9 +1,9 @@
 
 - type: asset-id
-  name: test
+  name: test3
 - type: physics-body
-  mass: 10.0
-  inertia: 10.0
+  mass: 1000.0
+  inertia: 1000.0
   vel: [0.0, 0.0]
   rotVel: 0.0
 - type: phy-thrust
@@ -11,14 +11,9 @@
   thrustLocal: [0.0, 0.0]
   torque: 0.0
   maxTorque: 1000.0
-  maxRotVel: 10.0
+  maxRotVel: 1.0
   thrustMainMax: 10000.0
   thrustManeuverMax: 1000.0
-  maxSpd: 100.0
+  maxSpd: 10.0
 - type: move-ctrl
-  active: true
-  spPosSec: [0, 0]
-  spPos: [100.0, 0.0]
-  spRot: 0.5
-  lookAt: [0.0, 0.0]
-  faceDirMode: Forward
+  active: false
