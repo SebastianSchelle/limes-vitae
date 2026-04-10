@@ -86,8 +86,8 @@
 							class="dbg-v">{{selGameObject.posX}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Pos Y</span><span
 							class="dbg-v">{{selGameObject.posY}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Rot</span><span
-							class="dbg-v">{{selGameObject.rot}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Rot</span><span class="dbg-v">{{selGameObject.rot}}</span>
+					</div>
 				</div>
 
 				<div data-if="selGameObject.hasPhysicsBody">
@@ -102,12 +102,6 @@
 							class="dbg-v">{{selGameObject.velY}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Rot vel</span><span
 							class="dbg-v">{{selGameObject.rotVel}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Rot acc</span><span
-							class="dbg-v">{{selGameObject.rotAcc}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Acc X</span><span
-							class="dbg-v">{{selGameObject.accX}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Acc Y</span><span
-							class="dbg-v">{{selGameObject.accY}}</span></div>
 				</div>
 
 				<div data-if="selGameObject.hasPhyThrust">
@@ -133,22 +127,26 @@
 					<div class="dbg-row"><span class="dbg-k">Max speed</span><span
 							class="dbg-v">{{selGameObject.maxSpd}}</span></div>
 				</div>
-				<div data-if="selGameObject.hasPhyPid">
-					<div class="dbg-section">Phy PID</div>
+				<div data-if="selGameObject.hasMoveCtrl">
+					<div class="dbg-section">Move ctrl</div>
 					<div class="dbg-row"><span class="dbg-k">Active</span><span
-							class="dbg-v">{{selGameObject.phyPidActive}}</span></div>
+							class="dbg-v">{{selGameObject.moveCtrlActive}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Setpoint X</span><span
 							class="dbg-v">{{selGameObject.spPosX}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Setpoint Y</span><span
 							class="dbg-v">{{selGameObject.spPosY}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint sector X</span><span
+							class="dbg-v">{{selGameObject.spPosSecX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Setpoint sector Y</span><span
+							class="dbg-v">{{selGameObject.spPosSecY}}</span></div>
 					<div class="dbg-row"><span class="dbg-k">Setpoint rot</span><span
 							class="dbg-v">{{selGameObject.spRot}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Error X</span><span
-							class="dbg-v">{{selGameObject.errorX}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Error Y</span><span
-							class="dbg-v">{{selGameObject.errorY}}</span></div>
-					<div class="dbg-row"><span class="dbg-k">Error rot</span><span
-							class="dbg-v">{{selGameObject.errorRot}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Face mode</span><span
+							class="dbg-v">{{selGameObject.moveCtrlFaceDirMode}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Look at X</span><span
+							class="dbg-v">{{selGameObject.lookAtX}}</span></div>
+					<div class="dbg-row"><span class="dbg-k">Look at Y</span><span
+							class="dbg-v">{{selGameObject.lookAtY}}</span></div>
 				</div>
 			</panel>
 			<tab>Input</tab>

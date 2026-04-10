@@ -1,3 +1,8 @@
 
 threads: 5
 slow-dump-ms: 50
+physics:
+  kp-thrust: 25.0
+  kp-turn: 25.0
+  min-face-forward-dist: 10.0
+  min-face-target-dist: 1.0
