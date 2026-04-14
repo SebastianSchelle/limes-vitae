@@ -10,18 +10,15 @@ gfx:
   tex-layer-cnt: 16
   tex-bucket-size: 1000
   tex-excess-height-threshold: 0.8
-  max-zoom:
-    world: 10
-    map: 10
-  min-zoom:
-    world: 0.01
-    map: 0.01
-  zoom-step:
-    world: 0.1
-    map: 0.1
-  pan-speed:
-    world: 10
-    map: 10
+ui:
+  zoom:
+    tactical-map: 1
+    strategic-map: 4
+    max: 5
+    min: 0.01
+    step: 0.2
+  pan:
+    speed: 10
 input:
   drag-threshold:
     world: 300

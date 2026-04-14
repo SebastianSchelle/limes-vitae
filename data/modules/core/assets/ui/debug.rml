@@ -193,7 +193,8 @@
 				<div class="dbg-section">Client model</div>
 				<div class="dbg-row"><span class="dbg-k">Game state</span><span
 						class="dbg-v">{{gameData.gameState}}</span></div>
-				<div class="dbg-note">State advances in model.modelLoop; see ClientGameState in std-inc.hpp.</div>
+				<div class="dbg-row"><span class="dbg-k">View mode</span><span
+						class="dbg-v">{{gameData.viewMode}}</span></div>
 			</panel>
 			<tab>Connection</tab>
 			<panel>

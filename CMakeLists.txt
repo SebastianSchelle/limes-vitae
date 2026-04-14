@@ -8,6 +8,9 @@ project(
     VERSION 1.0
     LANGUAGES CXX)
 
+# Debug | Release | Profile — see sphy-2d/cmake/SphyBuildTypes.cmake
+include("${CMAKE_SOURCE_DIR}/sphy-2d/cmake/SphyBuildTypes.cmake")
+
 # Define DEBUG only for Debug configuration.
 add_compile_definitions($<$<CONFIG:Debug>:DEBUG>)
 
