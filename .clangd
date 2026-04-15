@@ -5,8 +5,8 @@ Diagnostics:
   ClangTidy:
     Remove: "*"
 Completion:
-  AllScopes: No
-  HeaderInsertion: Never
+  AllScopes: Yes
+  HeaderInsertion: IWYU
   CodePatterns: None
 InlayHints:
   Enabled: false
@@ -39,6 +39,20 @@ SemanticTokens:
     - InactiveCode
     - Unknown
     - Concept
+---
+If:
+  PathMatch: ".*sphy-2d/thirdparty/(bgfx|dascript)/.*"
+Index:
+  Background: Skip
+Diagnostics:
+  Suppress: "*"
+---
+If:
+  PathMatch: ".*sphy-2d/(bitsery|concurrentqueue|spdlog|yaml-cpp)/.*"
+Index:
+  Background: Skip
+Diagnostics:
+  Suppress: "*"
 ---
 If:
   PathMatch: ".*(thirdparty|_deps)/.*"

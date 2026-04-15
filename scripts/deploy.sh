@@ -23,6 +23,7 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 # Source module directories
 SPHY_2D_MODULES="$PROJECT_ROOT/sphy-2d/data/modules"
 LIM_MODULES="$PROJECT_ROOT/data/modules"
+DASLIB_SRC="$PROJECT_ROOT/sphy-2d/thirdparty/dascript/daslib"
 
 # Executable names
 CLIENT_EXEC="limes-client"
@@ -44,6 +45,8 @@ fi
 
 # Destination modules directory
 DEPLOY_MODULES="$DEPLOY_DIR/modules"
+DEPLOY_DAS_ROOT="$DEPLOY_DIR/daslib"
+DEPLOY_DASLIB="$DEPLOY_DAS_ROOT/daslib"
 
 # Check if source directories exist
 if [ ! -d "$SPHY_2D_MODULES" ]; then
@@ -57,6 +60,7 @@ fi
 # Create deploy directory if it doesn't exist
 mkdir -p "$DEPLOY_DIR"
 mkdir -p "$DEPLOY_MODULES"
+mkdir -p "$DEPLOY_DASLIB"
 
 # Array to track synced modules
 SYNCED_MODULES=()
@@ -107,6 +111,14 @@ if [ ${#SYNCED_MODULES[@]} -gt 0 ]; then
     echo "  modlist.txt created: $MODLIST_FILE"
 else
     echo "Warning: No modules were synced, modlist.txt not created"
+fi
+
+# Sync daScript runtime daslib files used by script compiler/runtime.
+if [ -d "$DASLIB_SRC" ]; then
+    echo "Syncing daScript daslib from: $DASLIB_SRC"
+    rsync -av --delete "$DASLIB_SRC/" "$DEPLOY_DASLIB/"
+else
+    echo "Warning: daScript daslib source not found: $DASLIB_SRC"
 fi
 
 # Sync executables from build directory
@@ -188,6 +200,7 @@ fi
 echo ""
 echo "Deployment complete."
 echo "  Modules synced to: $DEPLOY_MODULES"
+echo "  daScript root synced to: $DEPLOY_DAS_ROOT"
 if [ $CLIENT_FOUND -eq 1 ] && [ $SERVER_FOUND -eq 1 ]; then
     echo "  Executables synced to: $DEPLOY_DIR (both found)"
 elif [ $CLIENT_FOUND -eq 1 ] || [ $SERVER_FOUND -eq 1 ]; then

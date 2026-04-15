@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "clangd.arguments": [
+      "-header-insertion=iwyu",
+      "-header-insertion-decorators=true",
+      "-all-scopes-completion=true",
+      "-limit-results=100",
+      "-background-index=true",
+      "-limit-references=2000",
+      "-completion-style=detailed",
+      "-function-arg-placeholders=true",
+      "-log=info"
+    ],
+    "clangd.detectExtensionConflicts": false,
+    "files.associations": {
+      "*.clangd": "yaml",
+      "*.clang-format": "yaml",
+      "*.clang-tidy": "yaml"
+    },
+    "files.exclude": {
+      "**/sphy-2d/thirdparty/bgfx/**": true,
+      "**/sphy-2d/thirdparty/dascript/**": true
+    },
+    "files.watcherExclude": {
+      "**/build/**": true,
+      "**/CMakeFiles/**": true,
+      "**/sphy-2d/build/**": true,
+      "**/sphy-2d/thirdparty/**": true
+    },
+    "search.exclude": {
+      "**/build/**": true,
+      "**/CMakeFiles/**": true,
+      "**/sphy-2d/build/**": true,
+      "**/sphy-2d/thirdparty/**": true
+    },
+    "editor.suggestFontSize": 0
+  }
+}
