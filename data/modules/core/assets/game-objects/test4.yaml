@@ -7,9 +7,6 @@
   vel: [0.0, 0.0]
   rotVel: 0.0
 - type: phy-thrust
-  thrustGlobal: [0.0, 0.0]
-  thrustLocal: [0.0, 0.0]
-  torque: 0.0
   maxTorque: 2000.0
   maxRotVel: 100.0
   thrustMainMax: 20000.0
@@ -17,3 +14,6 @@
   maxSpd: 1000.0
 - type: move-ctrl
   active: false
+- type: collider
+  vertices: [[-5, -2.5], [-5, 2.5], [5, 2.5], [5, -2.5]]
+  restitution: 0.1

@@ -17,3 +17,6 @@
   maxSpd: 100.0
 - type: move-ctrl
   active: false
+- type: collider
+  vertices: [[-5, -2.5], [-5, 2.5], [5, 2.5], [5, -2.5]]
+  restitution: 0.5

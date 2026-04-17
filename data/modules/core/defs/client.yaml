@@ -12,9 +12,9 @@ gfx:
   tex-excess-height-threshold: 0.8
 ui:
   zoom:
-    tactical-map: 1
-    strategic-map: 4
-    max: 5
+    tactical-map: 0.4
+    strategic-map: 5
+    max: 6
     min: 0.01
     step: 0.2
   pan:

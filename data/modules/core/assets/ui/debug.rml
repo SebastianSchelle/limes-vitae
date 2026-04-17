@@ -204,6 +204,17 @@
 				<div class="dbg-row"><span class="dbg-k">Time offset</span><span
 						class="dbg-v">{{connectionData.serverTimeOffset}}</span></div>
 			</panel>
+			<tab>Overlays</tab>
+			<panel>
+				<div class="dbg-section">Render overlays</div>
+				<div class="dbg-row">
+					<span class="dbg-k">AABB tree</span>
+					<input type="checkbox"
+						class="checkbox"
+						data-value="overlayData.enableAabbTree" />
+				</div>
+				<div class="dbg-note">Shows server broadphase rectangles for the current sector.</div>
+			</panel>
 		</tabset>
 	</body>
 </rml>
