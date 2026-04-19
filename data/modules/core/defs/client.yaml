@@ -10,6 +10,7 @@ gfx:
   tex-layer-cnt: 16
   tex-bucket-size: 1000
   tex-excess-height-threshold: 0.8
+  max-tex-per-draw-call: 1024
 ui:
   zoom:
     tactical-map: 0.4
