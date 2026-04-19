@@ -20,3 +20,6 @@
 - type: collider
   vertices: [[-5, -2.5], [-5, 2.5], [5, 2.5], [5, -2.5]]
   restitution: 0.1
+- type: map-icon
+  texName: test
+  size: [10.0, 10.0]
