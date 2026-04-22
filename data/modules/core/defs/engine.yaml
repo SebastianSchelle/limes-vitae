@@ -1,8 +1,7 @@
 
 upd-threads: 15
-slow-dump-ms: 20
+slow-dump-ms: 1000
 physics:
   kp-thrust: 25.0
   kp-turn: 25.0
-  min-face-forward-dist: 10.0
   min-face-target-dist: 1.0

@@ -6,15 +6,17 @@
   inertia: 100.0
 - type: phy-thrust
   maxTorque: 1000.0
-  maxRotVel: 40.0
+  maxRotVel: 5.0
   thrustMainMax: 100000.0
   thrustManeuverMax: 10000.0
-  maxSpd: 500.0
+  maxSpd: 500000.0
 - type: move-ctrl
   active: false
+  faceDirMode: Forward
+  minFFDist: 300.0
 - type: collider
-  vertices: [[-25, -50], [-25, 50], [25, 50], [25, -50]]
-  restitution: 0.5
+  vertices: [[-12.5, -50], [-12.5, 50], [12.5, 50], [12.5, -50]]
+  restitution: 0.1
 - type: map-icon
   texName: test
   size: [10.0, 10.0]
