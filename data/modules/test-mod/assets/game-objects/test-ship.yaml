@@ -18,7 +18,7 @@
   vertices: [[-12.5, -50], [-12.5, 50], [12.5, 50], [12.5, -50]]
   restitution: 0.1
 - type: map-icon
-  texName: test
+  texName: frigate
   size: [10.0, 10.0]
 - type: textures
   textures:
