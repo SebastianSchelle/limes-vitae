@@ -1,6 +1,9 @@
 
-upd-threads: 15
-slow-dump-ms: 30
+upd:
+  threads: 15
+  dump-int:
+    slow: 1000
+    active-sector: 30
 physics:
   kp-thrust: 25.0
   kp-turn: 25.0

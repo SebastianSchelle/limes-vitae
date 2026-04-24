@@ -22,11 +22,11 @@
   size: [10.0, 10.0]
 - type: textures
   textures:
-    - name: ship-chunk
+    - name: ship-chunk-2
       bounds: [0.0, -25.0, 25.0, 50.0]
       zIndex: 1
       rot: 0.0
-    - name: ship-chunk
+    - name: ship-chunk-2
       bounds: [0.0, 25.0, 25.0, 50.0]
       zIndex: 1
       rot: 180.0
